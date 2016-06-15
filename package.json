@@ -1,59 +1,35 @@
 {
-  "name": "ember-suave",
-  "version": "3.0.0",
+  "name": "eslint-plugin-ember-suave",
+  "version": "4.0.0",
   "description": "Make your Ember App Stylish",
   "directories": {
     "test": "tests"
   },
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "eslint-plugin"
+  ],
+  "author": [
+    "Estelle DeBlois <edeblois@gmail.com>",
+    "Robert Jackson <me@rwjblue.com>"
+  ],
+  "main": "lib/index.js",
   "scripts": {
-    "test": "mocha tests/*-test.js --reporter spec"
+    "test": "mocha tests --recursive"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/dockyard/ember-suave.git"
   },
-  "engines": {
-    "node": ">= 0.10.0"
-  },
-  "author": [
-    "Estelle DeBlois <edeblois@gmail.com>",
-    "Robert Jackson <me@rwjblue.com>"
-  ],
-  "license": "MIT",
-  "devDependencies": {
-    "broccoli": "0.16.9",
-    "broccoli-asset-rev": "^2.4.2",
-    "chai": "^3.5.0",
-    "ember-cli": "2.4.3",
-    "ember-cli-blueprint-test-helpers": "^0.11.0",
-    "ember-cli-internal-test-helpers": "^0.8.1",
-    "ember-cli-release": "1.0.0-beta.1",
-    "jscs": "^3.0.4",
-    "mocha": "^2.4.5",
-    "mocha-jshint": "^2.1.1",
-    "walk-sync": "^0.2.6"
-  },
-  "keywords": [
-    "ember-addon",
-    "jscs-preset",
-    "preset"
-  ],
   "dependencies": {
-    "broccoli-jscs": "^2.0.0",
-    "cst": "^0.3.0",
-    "ember-cli-babel": "^5.1.6",
-    "js-string-escape": "^1.0.0",
-    "jscs": "^3.0.4",
-    "jscs-ember-deprecations": "martndemus/jscs-ember-deprecations#ae206b8",
-    "temp": "0.8.3"
+    "requireindex": "~1.1.0"
   },
-  "ember-addon": {
-    "configPath": "tests/dummy/config",
-    "main": "index.js"
+  "devDependencies": {
+    "eslint": "~2.6.0"
   },
-  "main": "lib/jscsrc.json",
-  "bugs": {
-    "url": "https://github.com/dockyard/ember-suave/issues"
+  "engines": {
+    "node": ">=0.10.0"
   },
-  "homepage": "https://github.com/dockyard/ember-suave"
+  "license": "MIT"
 }
